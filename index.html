@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Form Mahasiswa</title>
+</head>
+<body>
+
+    <h1>Validasi Form Registrasi</h1>
+
+    <form id="formMahasiswa">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required>
+        <br><br>
+
+        <label for="tanggal">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal" required>
+        <br><br>
+
+        <button type="submit">Daftar</button>
+    </form>
+
+    <p id="pesan"></p>
+
+    <script>
+        const form = document.getElementById("formMahasiswa");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const tanggal = new Date(
+                document.getElementById("tanggal").value
+            );
+
+            const hariIni = new Date();
+            let umur = hariIni.getFullYear() - tanggal.getFullYear();
+
+            const selisihBulan =
+                hariIni.getMonth() - tanggal.getMonth();
+
+            if (
+                selisihBulan < 0 ||
+                (selisihBulan === 0 &&
+                 hariIni.getDate() < tanggal.getDate())
+            ) {
+                umur--;
+            }
+
+            if (umur < 17) {
+                document.getElementById("pesan").textContent =
+                    "Pendaftar harus berusia minimal 17 tahun.";
+            } else {
+                document.getElementById("pesan").textContent =
+                    "Validasi berhasil! Form siap diproses.";
+            }
+        });
+    </script>
+
+</body>
+</html>
