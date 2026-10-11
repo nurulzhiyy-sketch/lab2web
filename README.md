@@ -23,25 +23,24 @@ multimedia, dan validasi form dasar menggunakan HTML.
 - Validasi form menggunakan atribut HTML.
 
 ## Dokumentasi Screenshot
-## Dokumentasi Screenshot
 
 ### 1. Tabel Data Mahasiswa
-![Tabel Data Mahasiswa](media/tabel data 1.png)
+![Tabel Data Mahasiswa](media/tabel%20data%201.png)
 
 ### 2. Form Registrasi
-![Form Registrasi](media/tabel form 2.png)
+![Form Registrasi](media/tabel%20form%202.png)
 
 ### 3. Validasi Form
-![Validasi Form](media/tabel validasi 3.png)
+![Validasi Form](media/tabel%20validasi%203.png)
 
 ### 4. Semantic HTML
-![Semantic HTML](media/portal 4.png)
+![Semantic HTML](media/portal%204.png)
 
 ### 5. Multimedia
-![Multimedia](media/multimedia 5.png)
+![Multimedia](media/multimedia%205.png)
 
 ### 6. Form Biodata Mahasiswa
-![Form Biodata Mahasiswa](media/ form biodata mahasiswa.png)
+![Form Biodata Mahasiswa](media/form%20biodata%20mahasiswa.png)
 
 ## Kesimpulan
 Praktikum ini membantu memahami penggunaan elemen HTML
